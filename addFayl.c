@@ -12,17 +12,10 @@ typedef struct FileType {
 
 void createNewFile(TYPE *s, int lenght) {
 	
-	//int add;
-	
-	//printf("nechta yangi fayl qo'shmoqchisiz?");
-	//scanf("%i",&add);
-	
 	 
 	printf(" File name, extension, size shu ketma -ketlikda to'ldiring!\n");
 	scanf("%s %s %li", s[lenght].filename, s[lenght].extension, &s[lenght].sizee);
 }
-
-
 
 void Extension(TYPE s[], int lenght) {
 	int index;
@@ -52,11 +45,9 @@ void  listAllFiles(TYPE s[], int lenght) {
 
 int main () {
 	
-	
 	TYPE user[10];
 	 
 	int lenght=0, i=0, chose;
-	
 	
 	
    do {
@@ -67,10 +58,8 @@ int main () {
 	switch (chose) {
 		case 1:{
 		     createNewFile(user, lenght);
-		     lenght++;
-		     
-			
-			break;
+		     lenght++;	
+		     break;
 		}
 
 		case 2: {
@@ -92,14 +81,10 @@ int main () {
 			break;
 		}
 
-
 	}
 	
-	//system("clear");
-	
-	} while(1);
-    
-	
+    } while(1);
+    	
 	 return 0;
 
 }
